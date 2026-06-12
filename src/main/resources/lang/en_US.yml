@@ -1,0 +1,70 @@
+# MovementSpeed, the easiest way to go faster without mods.
+# - Developed by mattmunich
+#
+# ----------------------------------------------------------------
+# Welcome to the enUS message configuration file.
+# Below, you can change the messages that will be shown by
+# the plugin when the language in config.yml is set to
+# this file's name (without the .yml)
+# ----------------------------------------------------------------
+# Some instructions:
+# - Color codes
+# You can use the § sign followed by a specific character to
+# add color to these messages.
+#
+# - Arguments/Variables
+# Some messages support arguments that will be formatted like:
+# %argument%. These will are hard-coded in the plugin and will
+# be replaced independently of this config. If they are
+# missing, they just won't show up in the message.
+# ----------------------------------------------------------------
+
+prefix: "§x§F§C§D§0§5§C§l[§x§F§C§C§5§5§E§l⚡ §x§F§B§B§0§6§3§lS§x§F§B§A§5§6§5§lp§x§F§B§9§B§6§7§le§x§F§B§9§0§6§9§le§x§F§A§8§5§6§C§ld§x§F§A§7§B§6§E§l] "
+
+flyspeed:
+  self:
+    changeSuccess: "§aYour fly speed successfully has been set to %speed%"
+    resetSuccess: "§aYour fly speed successfully has been reset"
+  others:
+    success:
+      sender:
+        change: "§aSuccessfully set %target%'s fly speed to %speed%"
+        reset: "§aSuccessfully reset %target%'s fly speed"
+      target:
+        change: "§aYour fly speed has been set to %speed% by %sender%"
+        reset: "§aYour fly speed has been reset by %sender%"
+    noPermission: "§cYou do not have permission to change other players' fly speed."
+
+walkspeed:
+  self:
+    changeSuccess: "§aYour walk speed successfully has been set to %speed%"
+    resetSuccess: "§aYour walk speed successfully has been reset"
+  others:
+    success:
+      sender:
+        change:  "§aSuccessfully set %target%'s walk speed to %speed%"
+        reset:  "§aSuccessfully reset %target%'s walk speed"
+      target:
+        change: "§aYour walk speed has been set to %speed% by %sender%"
+        reset: "§aYour walk speed has been reset by %sender%"
+    noPermission: "§cYou do not have permission to change other players' walk speed."
+
+speed:
+  self:
+    changeSuccess: "§aYour speed successfully has been set to %speed%"
+    resetSuccess: "§aYour speed successfully has been reset"
+  others:
+    success:
+      sender:
+        change:  "§aSuccessfully set %target%'s speed to %speed%"
+        reset:  "§aSuccessfully reset %target%'s speed"
+      target:
+        change: "§aYour speed has been set to %speed% by %sender%"
+        reset: "§aYour speed has been reset by %sender%"
+    noPermission: "§cYou do not have permission to change other players' speed."
+
+error:
+  playerNotFound: "§cPlayer not found."
+  invalidSpeed: "§cInvalid speed. Please provide a number between -10 and 10."
+  consoleSpecifyPlayer: "§cConsole must specify a player"
+

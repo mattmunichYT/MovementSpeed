@@ -1,0 +1,11 @@
+# MovementSpeed, the easiest way to go faster without mods.
+# - Developed by mattmunich
+#
+# ----------------------------------------------------------------
+# Welcome to the main configuration file of this plugin.
+# Below, you can change the main settings for this plugin,
+# like the language of the messages.
+# ----------------------------------------------------------------
+
+# Will read from the file [language].yml, so by default: en_US.yml
+language: en_US

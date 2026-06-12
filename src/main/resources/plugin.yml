@@ -1,8 +1,79 @@
 name: MovementSpeed
-description: $description
+description: "The easiest way to go faster without mods"
 version: '${version}'
-
-main: fr.mattmunich.movementSpeed.MovementSpeed
+prefix: "MovementSpeed"
+main: fr.mattmunich.movementSpeed.Main
 api-version: '1.21'
 
 authors: [ mattmunich ]
+
+commands:
+  flyspeed:
+    description: "Command to modify a player's flying speed"
+    usage: /flyspeed <[player]/[speed]> [speed]
+    permission: movementspeed.command.flyspeed.self
+  walkspeed:
+    description: "Command to modify a player's walking speed"
+    usage: /walkspeed <[player]/[speed]> [speed]
+    permission: movementspeed.command.walkspeed.self
+  speed:
+    description: "Command to modify a player's flying and walking speed"
+    usage: /speed <[player]/[speed]> [speed]
+    permission: movementspeed.command.speed.self
+
+permissions:
+  movementspeed.*:
+    description: "All the plugin's permissions."
+    default: op
+    children:
+      movementspeed.command.*: true
+
+  movementspeed.command.*:
+    description: "Allows to use every command of the plugin"
+    default: op
+    children:
+      movementspeed.command.flyspeed.*: true
+      movementspeed.command.walkspeed.*: true
+      movementspeed.command.speed.*: true
+
+  # Fly speed Command
+  movementspeed.command.flyspeed.*:
+    description: "Allows to use the whole /flyspeed command"
+    default: op
+    children:
+      movementspeed.command.flyspeed.self: true
+      movementspeed.command.flyspeed.others: true
+  movementspeed.command.flyspeed.self:
+    description: "Allows to change your own fly speed"
+    default: op
+  movementspeed.command.flyspeed.others:
+    description: "Allows to change other players' fly speed"
+    default: op
+
+  # Walk speed Command
+  movementspeed.command.walkspeed.*:
+    description: "Allows to use the whole /walkspeed command"
+    default: op
+    children:
+      movementspeed.command.walkspeed.self: true
+      movementspeed.command.walkspeed.others: true
+  movementspeed.command.walkspeed.self:
+    description: "Allows to change your own walk speed"
+    default: op
+  movementspeed.command.walkspeed.others:
+    description: "Allows to change other players' walk speed"
+    default: op
+
+  # Speed Command
+  movementspeed.command.speed.*:
+    description: "Allows to use the whole /speed command"
+    default: op
+    children:
+      movementspeed.command.speed.self: true
+      movementspeed.command.speed.others: true
+  movementspeed.command.speed.self:
+    description: "Allows to change your own general speed"
+    default: op
+  movementspeed.command.speed.others:
+    description: "Allows to change other players' general speed"
+    default: op

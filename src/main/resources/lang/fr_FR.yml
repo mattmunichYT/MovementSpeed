@@ -1,0 +1,69 @@
+# MovementSpeed, le moyen le plus simple d'aller plus vite sans mods.
+# - Développé par mattmunich
+#
+# ----------------------------------------------------------------
+# Bienvenue dans le fichier de configuration des messages fr_FR.
+# Ci-dessous, vous pouvez modifier les messages qui seront affichés par
+# le plugin lorsque la langue dans config.yml est définie sur
+# le nom de ce fichier (sans le .yml)
+# ----------------------------------------------------------------
+# Quelques instructions :
+# - Codes de couleur
+# Vous pouvez utiliser le signe § suivi d'un caractère spécifique pour
+# ajouter de la couleur à ces messages.
+#
+# - Arguments/Variables
+# Certains messages prennent en charge des arguments qui seront formatés ainsi :
+# %argument%. Ceux-ci sont codés en dur dans le plugin et seront
+# remplacés indépendamment de cette config. S'ils sont
+# manquants, ils ne s'afficheront tout simplement pas dans le message.
+# ----------------------------------------------------------------
+
+prefix: "§x§F§C§D§0§5§C§l[§x§F§C§C§5§5§E§l⚡ §x§F§B§B§0§6§3§lS§x§F§B§A§5§6§5§lp§x§F§B§9§B§6§7§le§x§F§B§9§0§6§9§le§x§F§A§8§5§6§C§ld§x§F§A§7§B§6§E§l] "
+
+flyspeed:
+  self:
+    changeSuccess: "§aVotre vitesse de vol a été configurée avec succès sur %speed%"
+    resetSuccess: "§aVotre vitesse de vol a été réinitialisée avec succès"
+  others:
+    success:
+      sender:
+        change: "§aLa vitesse de vol de %target% a été configurée avec succès sur %speed%"
+        reset: "§aLa vitesse de vol de %target% a été réinitialisée avec succès"
+      target:
+        change: "§aVotre vitesse de vol a été configurée sur %speed% par %sender%"
+        reset: "§aVotre vitesse de vol a été réinitialisée par %sender%"
+    noPermission: "§cVous n'avez pas la permission de modifier la vitesse de vol des autres joueurs."
+
+walkspeed:
+  self:
+    changeSuccess: "§aVotre vitesse de marche a été configurée avec succès sur %speed%"
+    resetSuccess: "§aVotre vitesse de marche a été réinitialisée avec succès"
+  others:
+    success:
+      sender:
+        change:  "§aLa vitesse de marche de %target% a été configurée avec succès sur %speed%"
+        reset:  "§aLa vitesse de marche de %target% a été réinitialisée avec succès"
+      target:
+        change: "§aVotre vitesse de marche a été configurée sur %speed% par %sender%"
+        reset: "§aVotre vitesse de marche a été réinitialisée par %sender%"
+    noPermission: "§cVous n'avez pas la permission de modifier la vitesse de marche des autres joueurs."
+
+speed:
+  self:
+    changeSuccess: "§aVotre vitesse a été configurée avec succès sur %speed%"
+    resetSuccess: "§aVotre vitesse a été réinitialisée avec succès"
+  others:
+    success:
+      sender:
+        change:  "§aLa vitesse de %target% a été configurée avec succès sur %speed%"
+        reset:  "§aLa vitesse de %target% a été réinitialisée avec succès"
+      target:
+        change: "§aVotre vitesse a été configurée sur %speed% par %sender%"
+        reset: "§aVotre vitesse a été réinitialisée par %sender%"
+    noPermission: "§cVous n'avez pas la permission de modifier la vitesse des autres joueurs."
+
+error:
+  playerNotFound: "§cJoueur introuvable."
+  invalidSpeed: "§cVitesse invalide. Veuillez fournir un nombre entre -10 et 10."
+  consoleSpecifyPlayer: "§cLa console doit spécifier un joueur."
