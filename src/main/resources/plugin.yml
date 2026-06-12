@@ -1,0 +1,8 @@
+name: MovementSpeed
+description: $description
+version: '${version}'
+
+main: fr.mattmunich.movementSpeed.MovementSpeed
+api-version: '1.21'
+
+authors: [ mattmunich ]
