@@ -2,6 +2,10 @@
 
 A lightweight Paper/Spigot plugin that allows players and administrators to quickly modify walking and flying speeds.
 
+## Download
+* [Modrinth](https://modrinth.com/plugin/movement-speed)
+* [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/movement-speed)
+
 ## Features
 
 * Change fly speed
